@@ -1,0 +1,11 @@
+{
+  "$schema": "https://aka.ms/azure/static-web-apps-cli/schema",
+  "configurations": {
+    "www.thepaynetrain.com": {
+      "appLocation": ".",
+      "apiLocation": "api",
+      "outputLocation": ".",
+      "apiBuildCommand": "npm run build --if-present"
+    }
+  }
+}

@@ -1,0 +1,65 @@
+trigger:
+  - main
+
+pool:
+  vmImage: ubuntu-latest
+
+resources:
+  repositories:
+  - repository: terraform
+    type: git
+    name: scripts/Terraform
+steps:
+  - checkout: self
+    submodules: true 
+  - checkout: terraform
+    submodules: true
+
+  - task: AzureStaticWebApp@0
+    inputs:
+      app_location: '.'
+      api_location: 'api'
+      output_location: '.'
+      skip_app_build: true
+      workingDirectory: '$(System.DefaultWorkingDirectory)/www.thepaynetrain.com/'
+      azure_static_web_apps_api_token: $(www-thepaynetrain-com-ds)
+      
+
+  - task: TerraformInstaller@1
+    inputs:
+      terraformVersion: 'latest'
+  - task: TerraformTaskV4@4
+    inputs:
+      provider: 'azurerm'
+      command: 'init'
+      workingDirectory: '$(System.DefaultWorkingDirectory)/Terraform/sites/thepaynetrain.com/www/azure'
+      backendServiceArm: 'Production Service(3f6d29b1-08f7-4d8b-a298-8ea97dd77eda)'
+      backendAzureRmResourceGroupName: 'thepaynetrain-com-rg'
+      backendAzureRmStorageAccountName: 'thepaynetrainsa'
+      backendAzureRmContainerName: 'terraform'
+      backendAzureRmKey: 'www-thepaynetrain-com.prod.terraform.tfstate'
+
+  - task: TerraformTaskV4@4
+    inputs:
+      provider: 'azurerm'
+      command: 'apply'
+      workingDirectory: '$(System.DefaultWorkingDirectory)/Terraform/sites/thepaynetrain.com/www/azure'
+      environmentServiceNameAzureRM: 'Production Service(3f6d29b1-08f7-4d8b-a298-8ea97dd77eda)'
+  
+  - task: AzureKeyVault@2
+    inputs:
+      azureSubscription: 'Production Service(3f6d29b1-08f7-4d8b-a298-8ea97dd77eda)'
+      KeyVaultName: 'thepaynetrain-com-kv'
+      SecretsFilter: '*'
+      RunAsPreJob: true
+  - task: Docker@2
+    inputs:
+      containerRegistry: 'dockerhub'
+      repository: 'lapayne82/homepage'
+      command: 'buildAndPush'
+      Dockerfile: '**/homepage.Dockerfile'
+      tags: |
+        $(Build.BuildId)
+        latest
+
+

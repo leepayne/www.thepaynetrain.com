@@ -1,0 +1,26 @@
+{
+    "trailingSlash": "auto",
+    "routes": [
+      {
+        "route": "/admin/index.html",
+        "allowedRoles": ["administrator"]
+      },
+      {
+        "route": "/admin",
+        "rewrite": "/admin.index.html"
+      },
+      {
+        "route": "/login",
+        "rewrite": "/.auth/login/aad"
+      },
+      {
+        "route": "/logout",
+        "redirect": "/.auth/logout"
+      }
+    ],
+    "responseOverrides": {
+      "404": {
+        "rewrite": "/404.html"
+      }
+    }
+  }

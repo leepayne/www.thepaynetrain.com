@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Personal CV Website Sample code">
+    <meta name="author" content="Lee Payne">
+
+    <title>Lee Payne - Azure & AWS samples</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+   
+
+    This page will present a number of samples of Azure functions and provide details on how they work which will hopefully be useful to other people, they are all live, so you can see the result immediatly, sample code, comments and diagrams are availible underneath each one.
+    <div class="container-fluid p-0">
+
+        <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="vision">
+            <div class="w-100">
+                <h2>Picture Analysis</h2><br/>
+                This uses Azure cognitive services to analyse an image and tell you what it is and some tags to describe it.<br/>
+                <form>
+                    <label for="uploadedfile">Please choose a file:</label>
+                    <input type="file" id="uploadedfile" name="uploadedfile"><br />
+                </form>
+            
+                
+                <script>
+                 const handleImageUpload = event => {
+                        const files = event.target.files
+                        const formData = new FormData()
+                        formData.append('uploadedfile', files[0])
+
+                        fetch('/api/ImageDescribe', {
+                            method: 'POST',
+                            body: formData
+                        })
+                        .then(response => response.json())
+                        .then(data => {
+                            console.log(data)
+                        })
+                        .catch(error => {
+                            console.error(error)
+                        })
+                        }
+
+                        document.querySelector('#uploadedfile').addEventListener('change', event => {
+                            handleImageUpload(event)
+                        })
+                </script>
+            </div>
+        </section>
+    </div>
+    <!-- Bootstrap core JavaScript -->
+    <script src="/js/core/jquery.3.2.1.min.js"></script>
+    <script src="/js/core/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/js/core/jquery.3.2.1.min.js"></script>
+
+</body>
+
+</html>

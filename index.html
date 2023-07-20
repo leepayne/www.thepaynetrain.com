@@ -1,0 +1,1178 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lee Payne - CV</title>
+    <script src="/js/core/jquery.3.2.1.min.js"></script>
+    <script src="/js/now-ui-kit.js"></script>
+    <script src="/js/aos.js"></script>
+    <script src="/js/core/main.js"></script>
+    <script src="/js/core/popper.min.js"></script>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <script src="/js/core/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1dd141b749.js" crossorigin="anonymous"></script>
+    <link href="/css/aos.css?ver=1.1.0" rel="stylesheet">
+    <link href="/css/main.css?ver=1.1.0" rel="stylesheet">
+    <noscript>
+      <style type="text/css">
+        [data-aos] {
+            opacity: 1 !important;
+            transform: translate(0) scale(1) !important;
+        }
+      </style>
+    </noscript>
+
+    <script type="text/javascript">
+      !function(T,l,y){var S=T.location,u="script",k="instrumentationKey",D="ingestionendpoint",C="disableExceptionTracking",E="ai.device.",I="toLowerCase",b="crossOrigin",w="POST",e="appInsightsSDK",t=y.name||"appInsights";(y.name||T[e])&&(T[e]=t);var n=T[t]||function(d){var g=!1,f=!1,m={initialize:!0,queue:[],sv:"4",version:2,config:d};function v(e,t){var n={},a="Browser";return n[E+"id"]=a[I](),n[E+"type"]=a,n["ai.operation.name"]=S&&S.pathname||"_unknown_",n["ai.internal.sdkVersion"]="javascript:snippet_"+(m.sv||m.version),{time:function(){var e=new Date;function t(e){var t=""+e;return 1===t.length&&(t="0"+t),t}return e.getUTCFullYear()+"-"+t(1+e.getUTCMonth())+"-"+t(e.getUTCDate())+"T"+t(e.getUTCHours())+":"+t(e.getUTCMinutes())+":"+t(e.getUTCSeconds())+"."+((e.getUTCMilliseconds()/1e3).toFixed(3)+"").slice(2,5)+"Z"}(),iKey:e,name:"Microsoft.ApplicationInsights."+e.replace(/-/g,"")+"."+t,sampleRate:100,tags:n,data:{baseData:{ver:2}}}}var h=d.url||y.src;if(h){function a(e){var t,n,a,i,r,o,s,c,p,l,u;g=!0,m.queue=[],f||(f=!0,t=h,s=function(){var e={},t=d.connectionString;if(t)for(var n=t.split(";"),a=0;a<n.length;a++){var i=n[a].split("=");2===i.length&&(e[i[0][I]()]=i[1])}if(!e[D]){var r=e.endpointsuffix,o=r?e.location:null;e[D]="https://"+(o?o+".":"")+"dc."+(r||"services.visualstudio.com")}return e}(),c=s[k]||d[k]||"",p=s[D],l=p?p+"/v2/track":config.endpointUrl,(u=[]).push((n="SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details)",a=t,i=l,(o=(r=v(c,"Exception")).data).baseType="ExceptionData",o.baseData.exceptions=[{typeName:"SDKLoadFailed",message:n.replace(/\./g,"-"),hasFullStack:!1,stack:n+"\nSnippet failed to load ["+a+"] -- Telemetry is disabled\nHelp Link: https://go.microsoft.com/fwlink/?linkid=2128109\nHost: "+(S&&S.pathname||"_unknown_")+"\nEndpoint: "+i,parsedStack:[]}],r)),u.push(function(e,t,n,a){var i=v(c,"Message"),r=i.data;r.baseType="MessageData";var o=r.baseData;return o.message='AI (Internal): 99 message:"'+("SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details) ("+n+")").replace(/\"/g,"")+'"',o.properties={endpoint:a},i}(0,0,t,l)),function(e,t){if(JSON){var n=T.fetch;if(n&&!y.useXhr)n(t,{method:w,body:JSON.stringify(e),mode:"cors"});else if(XMLHttpRequest){var a=new XMLHttpRequest;a.open(w,t),a.setRequestHeader("Content-type","application/json"),a.send(JSON.stringify(e))}}}(u,l))}function i(e,t){f||setTimeout(function(){!t&&m.core||a()},500)}var e=function(){var n=l.createElement(u);n.src=h;var e=y[b];return!e&&""!==e||"undefined"==n[b]||(n[b]=e),n.onload=i,n.onerror=a,n.onreadystatechange=function(e,t){"loaded"!==n.readyState&&"complete"!==n.readyState||i(0,t)},n}();y.ld<0?l.getElementsByTagName("head")[0].appendChild(e):setTimeout(function(){l.getElementsByTagName(u)[0].parentNode.appendChild(e)},y.ld||0)}try{m.cookie=l.cookie}catch(p){}function t(e){for(;e.length;)!function(t){m[t]=function(){var e=arguments;g||m.queue.push(function(){m[t].apply(m,e)})}}(e.pop())}var n="track",r="TrackPage",o="TrackEvent";t([n+"Event",n+"PageView",n+"Exception",n+"Trace",n+"DependencyData",n+"Metric",n+"PageViewPerformance","start"+r,"stop"+r,"start"+o,"stop"+o,"addTelemetryInitializer","setAuthenticatedUserContext","clearAuthenticatedUserContext","flush"]),m.SeverityLevel={Verbose:0,Information:1,Warning:2,Error:3,Critical:4};var s=(d.extensionConfig||{}).ApplicationInsightsAnalytics||{};if(!0!==d[C]&&!0!==s[C]){method="onerror",t(["_"+method]);var c=T[method];T[method]=function(e,t,n,a,i){var r=c&&c(e,t,n,a,i);return!0!==r&&m["_"+method]({message:e,url:t,lineNumber:n,columnNumber:a,error:i}),r},d.autoExceptionInstrumented=!0}return m}(y.cfg);(T[t]=n).queue&&0===n.queue.length&&n.trackPageView({})}(window,document,{
+      src: "https://az416426.vo.msecnd.net/scripts/b/ai.2.min.js", 
+      cfg: { 
+          instrumentationKey: "51797461-f8a5-4b57-bac7-32609b93ca58",
+          disableFetchTracking: false,
+          enableCorsCorrelation: true,
+          enableRequestHeaderTracking: true,
+          enableResponseHeaderTracking: true
+      }});
+      appInsights.loadAppInsights();
+      appInsights.trackPageView();
+	  </script>
+  </head>
+  <body id="top">
+    <header>
+      <div class="profile-page sidebar-collapse">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-transparent bg-primary" color-on-scroll="400">
+          <div class="container">
+            <div class="navbar-translate"><a class="navbar-brand" href="#" rel="tooltip">Lee Payne - CV</a>
+              <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-bar bar1"></span><span class="navbar-toggler-bar bar2"></span><span class="navbar-toggler-bar bar3"></span></button>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end" id="navigation">
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#pskill">Skills</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#portfolio">Qualifications</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#articles">My Articles</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" data-bs-toggle="modal" data-bs-target="#myLinks">My Other Sites</a></li>
+                
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="page-content">
+      <div>
+<div class="profile-page">
+  <div class="wrapper">
+    <div class="page-header page-header-small" filter-color="green">
+      <div class="page-header-image" data-parallax="true" style="background-image: url('images/cc-bg-1.jpg')"></div>
+      <div class="container">
+        <div class="content-center">
+          <div class="cc-profile-image"><a href="#"><img src="images/avatar.jpg" alt="Image"/></a></div>
+          <div class="h2 title">Lee Payne</div>
+          <p class="category text-white">IT Management</p><a class="btn btn-primary" href="/public/pdf/leepayne-cv.pdf" target="_blank" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Download CV</a>
+        </div>
+      </div>
+      <div class="section">
+        <div class="container">
+          <div class="button-container"><a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.linkedin.com/in/lapayne1982"  rel="noopener noreferrer" title="View me on LinkedIn" target="_blank" ><i class="fa fa-linkedin"></i></a><a class="btn btn-default btn-round btn-lg btn-icon" href="https://dev.azure.com/lapayne/Public/_git/scripts" noopener rel="noopener noreferrer" title="View my code samples" target="_blank" ><i class="fa fa-github"></i></a><a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.credly.com/users/leepayne" rel="noopener noreferrer" title="View my achievements on youracclaim" target="_blank" ><i class="fa fa-certificate"></i></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section" id="about">
+  <p id="welcomename" name="welcomename" class="lead"></p>
+  <div class="container">
+    <div class="card" data-aos="fade-up" data-aos-offset="10">
+      <div class="row">
+        <div class="col-lg-6 col-md-12">
+          <div class="card-body">
+            <div class="h4 mt-0 title" id="aboutcontent">About</div>
+            
+            <p>Hello! I am Lee Payne, an experienced technology manager with experiences across the entire technology stack.</p>
+            <p>I am an experienced technology leader with experience across the entire technology stack including Windows systems, networking, information security, devops and strategic technology leadership. I am looking for a position which can utilize this broad experience to its fullest. My experience as an operational manager has provided opportunities to develop a detail orientated team culture while still seeing the overall team objectives are fulfilled, I have developed and implemented change initiatives to increase the reliability of the technology stack for our business customers.</p>
+          <p id="quote"></p>
+          </div>
+          
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <div class="card-body">
+            <div class="h4 mt-0 title">Basic Information</div>
+            <div class="row mt-3">
+              <div class="col-sm-4"><strong class="text-uppercase">Email:</strong></div>
+              <div class="col-sm-8">lee@thepaynetrain.com</div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-sm-4"><strong class="text-uppercase">Address:</strong></div>
+              <div class="col-sm-8">Bristol, UK</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section" id="pskill">
+  <div class="container">
+    <div class="h4 text-center mb-4 title">Professional Skills</div>
+    <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="progress-container progress-primary"><span class="progress-badge">Devops/SRE Management</span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary barwidth80" title="devopsmanagement" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div><span class="progress-value">80%</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="progress-container progress-primary"><span class="progress-badge">Project Management</span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary barwidth60" title="projmgmt" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div><span class="progress-value">60%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="progress-container progress-primary"><span class="progress-badge">IT Strategy</span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary barwidth75" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-label="ITStrategy" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div><span class="progress-value">75%</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="progress-container progress-primary"><span class="progress-badge">Team Leadership</span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary barwidth90" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-label="Team Leadership" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div><span class="progress-value">90%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="progress-container progress-primary"><span class="progress-badge">Cloud Services</span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary barwidth75" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-label="Cloud Services" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div><span class="progress-value">75%</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="progress-container progress-primary"><span class="progress-badge">Relationship Building</span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary barwidth60" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-label="Relationship building" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div><span class="progress-value">60%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section" id="tskill">
+  <div class="container">
+    <div class="h4 text-center mb-4 title">Technical Skills</div>
+    <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="progress-container progress-primary"><span class="progress-badge">Windows/Linux</span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary barwidth95" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-label="Windows/Linux" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div><span class="progress-value">95%</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="progress-container progress-primary"><span class="progress-badge">Azure</span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary barwidth90" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-label="Azure Management" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div><span class="progress-value">90%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="progress-container progress-primary"><span class="progress-badge">Docker/Kubernetes</span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary barwidth60" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-label="Docker/K8S" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div><span class="progress-value">60%</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="progress-container progress-primary"><span class="progress-badge">Azure Devops</span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary barwidth75" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-label="Azure Devops" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div><span class="progress-value">75%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="progress-container progress-primary"><span class="progress-badge">Terraform</span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary barwidth90" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-label="Terraform" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div><span class="progress-value">90%</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="progress-container progress-primary"><span class="progress-badge">AWS</span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary barwidth85" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-label="AWS" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div><span class="progress-value">70%</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="progress-container progress-primary"><span class="progress-badge">Google Cloud</span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary barwidth65" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-label="Google Cloud" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div><span class="progress-value">65%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section" id="portfolio">
+  <div class="container">
+    <div class="row">
+        <div class="h4 text-center mb-4 title">Qualifications (A full list of can be found in CPD under My Other Sites)</div>
+        <nav>
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <button class="nav-link active" id="nav-home-tab" title="Azure Certifications" data-bs-toggle="tab" data-bs-target="#nav-azure" type="button" role="tab" aria-controls="nav-azure" aria-selected="true"><i class="fa-brands fa-microsoft" aria-hidden="true"></i></button>
+            <button class="nav-link" id="nav-aws-tab" title="AWS Certifications" data-bs-toggle="tab" data-bs-target="#nav-aws" type="button" role="tab" aria-controls="nav-aws" aria-selected="true"><i class="fab fa-aws" aria-hidden="true"></i></button>
+            <button class="nav-link" id="nav-gcp-tab" title="GCP Certifications" data-bs-toggle="tab" data-bs-target="#nav-gcp" type="button" role="tab" aria-controls="nav-gcp" aria-selected="false"><i class="fa-brands fa-google" aria-hidden="true"></i></button>
+            <button class="nav-link" id="nav-nontech-tab" title="Non Technical Certifications" data-bs-toggle="tab" data-bs-target="#nav-nontech" type="button" role="tab" aria-controls="nav-nontech" aria-selected="false"><i class="fa fa-briefcase" aria-hidden="true"></i></button>
+            <button class="nav-link" id="nav-tech-tab" title="Other Technical Certifications" data-bs-toggle="tab" data-bs-target="#nav-tech" type="button" role="tab" aria-controls="nav-tech" aria-selected="false"><i class="fa fa-laptop" aria-hidden="true"></i></button>
+            
+          </div>
+        </nav>
+
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-azure" role="tabpanel" aria-labelledby="nav-azure-tab">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="card ">
+                  <h5 class="card-header">Azure Devops Expert</h5>
+                  <img class="card-img-top" src="images/azure/azure-devops-engineer-expert-600x600.png" alt="Azure Devops Expert" width="600" height="600"/>
+                  <div class="card-body">
+                    <p class="card-text">Microsoft DevOps professionals combine people, process, and technologies to continuously deliver valuable products and services that meet end user needs and business objectives.</p>
+                  </div>
+                </div>
+              </div>
+              
+            <div class="col-sm-6">
+                  <div class="card" >
+                    <h5 class="card-header">Azure Solutions Architect</h5>
+                    <img class="card-img-top" src="images/azure/azure_architect.png" alt="Azure Solutions Architect" width="600" height="600">
+                      <div class="card-body">
+                        <p class="card-text">An architect can:<br>
+                          Implement and monitor an Azure infrastructure<br>
+                          Implement management and security solutions<br>
+                          Implement solutions for apps<br>
+                          Implement and manage data platforms<br>
+                          Design monitoring<br>
+                          Design identity and security<br/>
+                          Design data storage<br>
+                          Design business continuity<br>
+                          Design infrastructure<br></p>
+                      </div>
+                  </div>
+              </div>
+              
+              <div class="col-sm-6">
+                <div class="card ">
+                  <h5 class="card-header">Azure AI Engineer</h5>
+                  <img class="card-img-top" src="images/azure/azure_ai.png" alt="Azure AI Engineer" width="600" height="600"/>
+                  <div class="card-body">
+                    <p class="card-text">An AI Engineer can:<br>
+                      Analyze solution requirements<br>
+                      Design AI solutions<br>
+                      Implement and monitor AI solutions<br></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="card ">
+                  <h5 class="card-header">Azure Security Engineer</h5>
+                  <img class="card-img-top" src="images/azure/azure-security-engineer-associate.png" alt="Azure Security Engineer" width="600" height="600"/>
+                  <div class="card-body">
+                    <p class="card-text">An Azure Security Engineer can:<br>
+                      Manage identity and access<br>
+                      Implement platform protection<br>
+                      Manage security operations<br>
+                      Secure data and applications<br></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="nav-aws" role="tabpanel" aria-labelledby="nav-aws-tab">
+            <div class="row">  
+            <div class="col-sm-6">
+                  <div class="card" >
+                    <h5 class="card-header">AWS DevOps Engineer Professional</h5>
+                    <img class="card-img-top" src="images/aws/devops-expert.png" alt="AWS DevOps Engineer Professional" width="340" height="680">
+                      <div class="card-body">
+                        <p class="card-text">The Devops Engineer can:<br>
+                          Showcase individuals’ technical expertise in provisioning, operating, and managing distributed application systems on the AWS platform, giving them increased confidence and credibility with peers, stakeholders, and customers. Organizations with these qualified professionals can ensure speedy delivery of secure, compliant, systems that are highly available and scalable.br></p>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="card" >
+                  <h5 class="card-header">AWS Solutions Architect Professional</h5>
+                  <img class="card-img-top" src="images/aws/solutions-architect-pro.png" alt="AWS Solutions Architect Professional" width="340" height="680">
+                    <div class="card-body">
+                      <p class="card-text">An architect can:<br>
+                        Familiarity with AWS CLI, AWS APIs, AWS CloudFormation templates, the AWS Billing Console, the AWS Management Console, a scripting language, and Windows and Linux environments
+                        <br>Ability to provide best practice guidance on the architectural design across multiple applications and projects of the enterprise as well as an ability to map business objectives to application/architecture requirements
+                        <br> Ability to evaluate cloud application requirements and make architectural recommendations for implementation, deployment, and provisioning applications on AWS
+                        <br>Ability to design a hybrid architecture using key AWS technologies (e.g., VPN, AWS Direct Connect) as well as a continuous integration and deployment process
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+          </div>
+          </div>
+
+          <div class="tab-pane fade" id="nav-gcp" role="tabpanel" aria-labelledby="nav-gcp-tab">
+            <div class="row">  
+
+            <div class="col-sm-6">
+                  <div class="card" >
+                    <h5 class="card-header">Google Cloud Certified Professional Architect</h5>
+                    <img class="card-img-top" src="images/gcp/gcp-architect.png" alt="Google Cloud Certified Professional Architect" width="340" height="600">
+                      <div class="card-body">
+                        <p class="card-text">The Architect can:<br>
+                          Design and plan a cloud solution architecture<br>
+                          Manage and provision the cloud solution infrastructure<br>
+                          Design for security and compliance<br>
+                          Analyze and optimize technical and business processes<br>
+                          Manage implementations of cloud architecture<br>
+                          Ensure solution and operations reliability<br>
+                        </p>
+                      </div>
+                  </div>
+              </div>
+
+             
+
+          </div>
+          </div>
+
+
+
+
+
+
+
+
+          <div class="tab-pane fade" id="nav-nontech" role="tabpanel" aria-labelledby="nav-nontech-tab">            
+            <div class="row">  
+            <div class="col-sm-6">
+                  <div class="card" >
+                    <h5 class="card-header">CMI Charted Manager</h5>
+                    <img class="card-img-top" src="images/non-tech/CMI Chartered Manager Logo Colour.jpg" alt="Image" width="600" height="600" alt="CMI Charted Manager" width="600" height="337">
+                      <div class="card-body">
+                        <p class="card-text">Chartered Manager is all about professional recognition and is the highest status that can be achieved in the management and leadership profession.
+
+                          Chartered status recognizes managers with exceptional management and leadership skills and commitment to Continuing Professional Development (CPD), demonstrating to employers and peers the value of a professional approach that delivers measurable impact.</p>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="card" >
+                  <h5 class="card-header">PADI Openwater diver</h5>
+                  <img class="card-img-top" src="images/non-tech/padi-open-water-diver-badge.jpg" alt="PADI Openwater diver" width="600" height="600">
+                    <div class="card-body">
+                      <p class="card-text">The PADI Open Water Diver course includes three parts: Knowledge Development, Confined Water Dives, and Open Water Dives. Knowledge Development covers the principles, concepts and terms you need to know for dive safety and enjoyment. During the Confined Water Dives, you learn and practice scuba skills in a pool or water with pool-like conditions. You'll enjoy making one or more minidives, which take you through the same steps you follow when you make open water dives. To complete training you practice, apply and demonstrate what you learn during four Open Water Dives at a local dive site.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="card" >
+                <h5 class="card-header">RYA L3 Powerboat (Displacement)</h5>
+                <img class="card-img-top" src="images/non-tech/rya-sailing-stage-1-and-2-machine-embroidered-800x800.jfif" alt="RYA L3 Powerboat (Displacement)" width="600" height="600">
+                  <div class="card-body">
+                    <p class="card-text">This two-day course provides the skills required when acting as an escort craft, safety boat or coach boat for a fleet of dinghies, windsurfers or canoes, or for racing or training activities.
+
+                      It includes rescue techniques and elements of race management and mark laying.<br></p>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="card" >
+              <h5 class="card-header">Fundamentals of digital marketing</h5>
+              <img class="card-img-top" src="images/non-tech/google.png" alt="Fundamentals of digital marketing" width="600" height="600">
+                <div class="card-body">
+                  <p class="card-text">Master the basics of digital marketing with our free course accredited by Interactive Advertising Bureau Europe and The Open University. There are 26 modules to explore, all created by Google trainers, packed full of practical exercises and real-world examples to help you turn knowledge into action.</p>
+                </p>
+                </div>
+            </div>
+        </div>
+
+          </div>
+        </div>
+          <div class="tab-pane fade" id="nav-tech" role="tabpanel" aria-labelledby="nav-tech-tab">
+            <div class="row">  
+
+              <div class="col-sm-6">
+                <div class="card" >
+                  <h5 class="card-header">PRINCE2 practitioner</h5>
+                  <img class="card-img-top" src="images/technical/PRINCE 2.png" alt="PRINCE2 practitioner" width="600" height="600">
+                    <div class="card-body">
+                      <p class="card-text">PRINCE2 Practitioner certification is suitable for anyone managing projects. This could be as part of a formal project management function or a role which involves project management as part of day-to-day work. The Practitioner certification aims to confirm that you have sufficient knowledge and understanding to apply and tailor the method in a range of different project environments and scenarios.</p>
+                    </div>
+                </div>
+            </div>
+  
+            <div class="col-sm-6">
+              <div class="card" >
+                <h5 class="card-header">Terraform Associate</h5>
+                <img class="card-img-top" src="images/technical/Terraform-Associate-Badge.png" alt="Terraform Associate" width="600" height="600">
+                  <div class="card-body">
+                    <p class="card-text">The Terraform Associate certification is for Cloud Engineers specializing in operations, IT, or development who know the basic concepts and skills associated with open source HashiCorp Terraform. Candidates will be best prepared for this exam if they have professional experience using Terraform in production, but performing the exam objectives in a personal demo environment may also be sufficient. This person understands which enterprise features exist and what can and cannot be done using the open source offering. </p>
+                  </p>
+                  </div>
+              </div>
+          </div>
+
+
+              <div class="col-sm-6">
+                    <div class="card" >
+                      <h5 class="card-header">ITIL 4 Strategic Leader</h5>
+                      <img class="card-img-top" src="images/technical/ITIL_4_STRATEGIC_LEADER.png" alt="Image" width="600" height="600" alt="ITIL 4 Strategic Leader" width="600" height="337">
+                        <div class="card-body">
+                          <p class="card-text">ITIL SL recognizes the value of ITIL, not just for IT operations, but for all digitally-enabled services. Becoming an ITIL 4 Strategic Leader demonstrates that the you have a clear understanding of how IT influences and directs business strategy.</p>
+                        </div>
+                    </div>
+                </div>
+  
+                <div class="col-sm-6">
+                  <div class="card" >
+                    <h5 class="card-header">ITIL 4 Managing Professional</h5>
+                    <img class="card-img-top" src="images/technical/Managing-Professional.png" alt="ITIL 4 Managing Professional" width="600" height="600">
+                      <div class="card-body">
+                        <p class="card-text">ITIL 4 MP has been created for IT practitioners working within technology and digital teams across businesses.<br>The Managing Professional (MP) stream provides practical and technical knowledge about how to run successful IT enabled services, teams and workflows.</p>
+                      </div>
+                  </div>
+              </div>
+  
+
+
+          <div class="col-sm-6">
+            <div class="card" >
+              <h5 class="card-header">SumoLogic Administrator</h5>
+              <img class="card-img-top" src="images/technical/sumoadmin.png" alt="SumoLogic Administrator" width="680" height="480">
+                <div class="card-body">
+                  <p class="card-text">Receive critical Administration expertise on how to set up your organization with Sumo Logic as well as how to optimize and manage queries and content to make the whole team more effective.</p>
+                </p>
+                </div>
+            </div>
+        </div>
+  
+            </div>
+
+
+
+
+          </div>
+        </div>
+      </div>
+          </div>
+        </div>
+      </div>
+     
+
+<div class="section" id="experience">
+  <div class="container cc-experience">
+    <div class="h4 text-center mb-4 title">Work Experience</div>
+
+    
+    <div class="card">
+      <div class="row">
+        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body cc-experience-header">
+            <p>August 2022 - present</p>
+            <div class="h5"><a href="https://www.bjss.com/" class="hyperlink" target="_blank" rel="noopener">BJSS</a></div>
+          </div>
+        </div>
+        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body">
+            <div class="h5">Managed Services Engineering Lead</div>
+            <p>Key Responsibilities:
+              <ul>
+                  <li>Responsible for all managed services engineers within BJSS (45 engineers)</li>
+                  <li>Responsible for aiding in the resourcing of engineers on engagements</li>
+                  <li>Run quarterly updates with each engineer individually to ensure they remain on track for their progression</li>
+               
+              </ul>
+                  Major Successes:
+                  <ul>
+                    <li>Implemented a robust career development strategy</li>
+                    <li>Implemented a progression strategy for the engineers</li>
+                    <li>Implemented a skills and competency matrix to allow for self identification of training needs</li>
+                    <li>Implemented Tech-ops reviews of engagements</li>
+                    <li>Lead the improvement of patching and monitoring across engagements</li>
+                </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="row">
+        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body cc-experience-header">
+            <p>September 2021 - August 2022</p>
+            <div class="h5"><a href="https://www.nagra.com/" class="hyperlink" target="_blank" rel="noopener">Nagra Media</a></div>
+          </div>
+        </div>
+        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body">
+            <div class="h5">Engineering Manager</div>
+            <p>                            Key Responsibilities:
+              <ul>
+                  <li>Managing three engineers including appraisals and performance management</li>
+                  <li>Working with development, operational and architectural staff</li>
+                  <li>Responsible for AWS accounts & budgets</li>
+                  <li>Responsible for all CI/CD pipeline tooling and golden images</li>
+              </ul>
+                  Major Successes:
+                  <ul>
+                    <li>Centralized password management</li>
+                    <li>Introduced IaC and reduced deployment time from 4 hours to 15 minutes</li>
+                    <li>Improved security by migrating by utilizing AWS Session Manager and Azure AD</li>
+                    <li>Moved build infrastructure to a fully containerized solution</li>
+                    <li>Migrated build infrastructure to Fargate from docker swarm saving an average 97% OPEX cost</li>
+                    <li>Put processes in place to perform routine updates and configuration changes</li>
+                </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="row">
+        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body cc-experience-header">
+            <p>July 2019 - September 2021</p>
+            <div class="h5"><a href="https://www.computershare.com/uk" class="hyperlink" target="_blank" rel="noopener">Computershare</a></div>
+          </div>
+        </div>
+        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body">
+            <div class="h5">Web Environments Manager</div>
+            <p>                            Key Responsibilities:
+              <ul>
+                  <li>Managing seven engineers including appraisals and performance management</li>
+                  <li>Working with development, operational and architectural staff</li>
+                  <li>Working with business units to understand their needs and requirements</li>
+              </ul>
+                  Major Successes:
+                  <ul>
+                    <li>Restored the function to a fit state after losing their management structure</li>
+                    <li>Converting a traditional web hosting team to be a Site Reliability Engineering function</li>
+                    <li>Upskilling the engineers to reduce single points of failure and manage azure</li>
+                    <li>Developed a comprehensive training plan to prepare for future required skills</li>
+                    <li>Implemented M365 support into BAU/run teams globally when it was currently unsupported</li>
+                    <li>Worked with various functions to deploy a chatbot for use by the service desk</li>
+                </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="row">
+        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body cc-experience-header">
+            <p>March 2018 – July 2019</p>
+            <div class="h5"><a href="https://www.computershare.com/uk" class="hyperlink" target="_blank" rel="noopener">Computershare</a></div>
+          </div>
+        </div>
+        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body">
+            <div class="h5">Server, Storage, Data Centre and Open Systems Manger</div>
+            <p>                          <h3 class="mb-3">Key Responsibilities:</h3>
+              <ul>
+                <li>Managing vendor relationships</li>
+                <li>Assisting with CAPEX/OPEX requirements for the business</li>
+                <li>Managing a portfolio of projects for business improvement</li>
+                <li>Managing incidents</li>
+                <li>Encouraging project idea generation and development within the team.</li>
+                <li>Coaching and developing engineers to reach their full potential.</li>
+                <li>Line management of 13 engineers including developing PDP’s and appraisals.</li>
+                <li>Managing change management including risk analysis</li>
+                <li>Created and managed team skills matrix and identified training requirements.</li>
+            </ul>
+                <h3 class="mb-3"> Major successes:</h3>
+                <ul>
+                <li>Reduced outstanding support tickets by 70%</li>
+                <li>Developed a 3-year strategy for the team</li>
+                <li>Managed the DR testing exercise for all infrastructure</li>
+                <li>Implemented cloud based storage for all operational DR documentation</li>
+                <li>Statistically significant higher employee engagement scores</li>
+                <li>Implemented a continuous service improvement system</li>
+                <li>Utilized Subject Matter Experts to improve the operational environment</li>
+                <li>Developed a continuous learning culture for the team</li>
+                <li>Developed a system of project control which was adopted by other teams</li>
+                <li>Implemented a programme of work which reduced outstanding security issues by 80%</li>
+                <li>Merged two disparate teams into one and reduced silos of knowledge with no staff turnover</li>
+            </ul></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="row">
+        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body cc-experience-header">
+            <p>March 2016-March 2018</p>
+            <div class="h5"><a href="https://www.computershare.com/uk" class="hyperlink" target="_blank" rel="noopener">Computershare</a></div>
+          </div>
+        </div>
+        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body">
+            <div class="h5">Network & Voice Manger</div>
+            <p>                          
+              <h3 class="mb-3">Key Responsibilities:</h3>
+              <ul>
+                <li>Managing vendor relationships.</li>
+                <li>Assisting with CAPEX/OPEX requirement for the business</li>
+                <li>Managing CAPEX budget spend</li>
+                <li>Managed a portfolio of projects</li>
+                <li>Managing incidents.</li>
+                <li>Attending global collaboration meetings as the regional representative.</li>
+                <li>Coaching and developing engineers to reach their full potential.</li>
+                <li>Line management of 8 engineers including developing PDP’s and appraisals.</li>
+                <li>Helped initiate an apprenticeship programme with the HR team.</li>
+                <li>Managing change management processes.</li>
+                <li>Managing resource utilization within the team.</li>
+                <li>Created and managed team skills matrix and identified training needs.</li>
+            </ul>
+                <h3 class="mb-3">Major Projects:</h3>
+                <ul>
+                <li>Expanded the team from 2 to 8 engineers and ensured we had the correct skills mix</li>
+                <li>Worked with the service desk to transition routine duties freeing up 3rd line resources.</li>
+                <li>Worked with application support teams to enable them to self service requests enabling business agility and innovation.</li>
+                <li>Managed the integration of teams on different sites as part of an acquisition.</li>
+                <li>Developed structures and policies to enable a customer focused environment.</li>
+                <li>Worked with global teams to achieve a follow the sun model.</li>
+                <li>Merged network and voice specialists into a single team and ensured they were cross skilled.</li>
+                <li>Created long term development and training plans for all engineers to develop their full potential.</li>
+            </ul></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <div class="card">
+    <div class="row">
+      <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+        <div class="card-body cc-experience-header">
+          <p>July 2013-March 2016</p>
+          <div class="h5"><a href="https://www.computershare.com/uk" class="hyperlink" target="_blank" rel="noopener">Computershare</a></div>
+        </div>
+      </div>
+      <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+        <div class="card-body">
+          <div class="h5">Network Engineer</div>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+ <div class="card">
+    <div class="row">
+      <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+        <div class="card-body cc-experience-header">
+          <p>March 2006 – June 2013</p>
+          <div class="h5"><a href="https://www.computershare.com/uk" class="hyperlink" target="_blank" rel="noopener">Computershare</a></div>
+        </div>
+      </div>
+      <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+        <div class="card-body">
+          <div class="h5">Server Support Engineer</div>
+          <p> </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+ <div class="card">
+    <div class="row">
+      <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+        <div class="card-body cc-experience-header">
+          <p>July 2004 – March 2006</p>
+          <div class="h5"><a href="https://www.nhs.uk" class="hyperlink" target="_blank" rel="noopener">Kennet and North Wiltshire NHS</a></div>
+        </div>
+      </div>
+      <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+        <div class="card-body">
+          <div class="h5">Desktop/Server Support Engineer</div>
+          <p> Helped manage all the software and hardware of the GP surgeries within the Wiltshire area covering from Bath to Andover and to Swindon </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+<div class="section" id="education">
+  <div class="container cc-education">
+    <div class="h4 text-center mb-4 title">Education</div>
+    <div class="card">
+      <div class="row">
+        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body cc-education-header">
+            <p>2013 - 2015</p>
+            <div class="h5">Master's Degree</div>
+          </div>
+        </div>
+        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body">
+            <div class="h5">Masters Business Administration - Technology Management (MBA Tech Mgmt) </div>
+            <p class="category">The Open University</p>
+            <p>                                <b>MBA Stage 1</b><br><br>
+              <b>Managing Technological Innovation</b><br><br>
+              <b>Technology Strategy</b><br><br>
+              <b>Strategic Human Resource Management</b><br><br>
+              <b>Corporate Finance</b><br><br>
+              <b>Project Management</b><br><br>
+              <b>The Management Initiative (Capstone Project)</b><br><br></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="row">
+        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body cc-education-header">
+            <p>2015 - 2016</p>
+            <div class="h5">Postgraduate Certificate </div>
+          </div>
+        </div>
+        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body">
+            <div class="h5">Technology Management </div>
+            <p class="category">The Open University</p>
+            <p>                            <b><i>Technology Strategy</i></b><br/>
+              &emsp; &emsp;<b>Technology Strategy Perspectives</b><br><br>
+              &emsp; &emsp;<b>Technology planning for strategic position</b><br><br>
+              &emsp; &emsp;<b>Entrepreneurship</b><br><br>
+              &emsp; &emsp;<b>Learning towards a technology strategy</b><br><br>
+              &emsp; &emsp;<b>Power, politics and technology strategy</b><br><br>
+              &emsp; &emsp;<b>Culture</b><br><br>
+                            <b><i>Managing Technological Innovation</i></b><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<b>Environment: opportunity or threat?</b><br><br>
+                             &emsp; &emsp;<b>Technology, innovation and management</b><br><br>
+                             &emsp; &emsp;<b>Open innovation</b><br><br>
+                             &emsp; &emsp;<b>Technology transfer: building value</b><br><br>
+                             &emsp; &emsp;<b>Eco-innovation</b><br><br>
+                             &emsp; &emsp;<b>Project management</b><br><br>
+                             &emsp; &emsp;<b>Managing Technological Innovation Conclusions</b><br><br>
+                            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+	
+	    <div class="card">
+      <div class="row">
+        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body cc-education-header">
+            <p>2009 - 2015</p>
+            <div class="h5">Postgraduate Certificate </div>
+          </div>
+        </div>
+        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body">
+            <div class="h5">Business Administration</div>
+            <p class="category">The Open University</p>
+            <p>                            <b>Exploring management</b><br><br>
+                            <b>Managing people and organizations</b><br><br>
+                            <b>Managing financial resources and performance</b><br><br>
+                            <b>Managing marketing</b><br><br>
+                            <b>Operational management</b><br><br>
+                            <b>Evidence Based Initiative</b><br><br></p>
+          </div>
+        </div>
+      </div>
+    </div>
+	
+	    <div class="card">
+      <div class="row">
+        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body cc-education-header">
+            <p>2014</p>
+            <div class="h5">Diploma</div>
+          </div>
+        </div>
+        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body">
+            <div class="h5">Level 5 Diploma - leadership and management</div>
+            <p class="category">Chartered Management Institute</p>
+            <p>                            <b>Being a Leader</b><br><br>
+                            Description: This unit has been designed for learners who want to develop or sharpen their professional edge and enhance personal effectiveness. Learners will evaluate the impact of an organizations structure and governance on management and leadership. They will explore theoretical models, management and leadership styles and approaches designed to promote a culture of mutual trust, respect and support.
+                            <br><br><b>Learning outcomes</b>
+                            <ul>
+                            <li>    Understand factors which impact on an organization's internal environment</li>
+                            <li> Understand the application of management and leadership theories</li>
+                            <li>  Understand the knowledge, skills and behaviors to be effective in a management and leadership role</li>
+                        </ul>
+                        <br><br>
+                            <b>Managing Team and Individual Performance</b><br><br>
+                            Description: This unit evaluates the reasons for managing performance and the approaches that can be used. It explores methods of rewarding the performance of individuals who exceed expectations, and analyses ways of managing under performance in a professional and supportive manner.
+
+                            This unit focuses on the way performance management, when used effectively, is able to impact on individual and organizational achievement.
+                        <br><br><b>Learning outcomes</b>
+                            <ul>
+                            <li>  Understand the rationale for managing performance within organizations</li>
+                            <li>   Understand frameworks, diagnostic and evaluation tools used for performance management</li>
+                            <li>   Know how to manage performance</li>
+                        </ul>
+                        <br><br>
+                            <b>Project Development and Control</b><br><br>
+                            Description: This unit focuses on the knowledge and skills required to manage projects successfully and overcome problems and challenges. It requires the learner to evaluate the methods and tools for planning tasks and activities, as well as knowing how to implement and manage project activities, build stakeholder relationships, manage resources and risk, monitor progress and report on outcomes.
+                        <br><br><b>Learning outcomes</b>
+                            <ul>
+                            <li>    Understand the role of projects in delivering organizational strategy</li>
+                            <li>    Understand processes for initiating, planning and managing projects</li>
+                            <li>    Understand the factors which contribute to effective project management</li>
+                        </ul>
+                        <br><br>
+                            <b>Managing Recruitment, Selection and Induction</b><br><br>
+                            Description: This unit has been designed to equip learners with an understanding of the factors which impact on recruitment. They will know how to develop plans and strategies for selecting staff, and identify approaches for retaining the best of the best.
+                        <br><br> <b>Learning outcomes</b>
+                        <ul>
+                            <li>   Understand the factors that impact on recruitment and selection</li>
+                            <li>   Know how to plan for recruitment and selection</li>
+                            <li>   Understand approaches to the recruitment and selection of a diverse and talented workforce</li>
+                            <li>  Understand strategies for retaining talent</li>
+                        </ul>
+                        <br><br>
+                            <b>Organizational Financial Management</b><br><br>
+                            The aim of this unit is to enable learners to understand how financial systems operate within organizations. Learners will evaluate the sources of finance for organizations, and understand the principles for setting and managing budgets in line with regulatory and organizational guidelines. This unit has been designed to enhance the learner’s confidence and credibility in financial management, which will translate into improved management skills.
+                        <br><br><b>Learning outcomes</b>
+                        <ul>
+                            <li>   Understand finance within organizations</li>
+                            <li>   Know how to set and manage budgets </li>
+                        </ul>
+                        <br><br></p>
+          </div>
+        </div>
+      </div>
+    </div>
+	
+	    <div class="card">
+      <div class="row">
+        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body cc-education-header">
+            <p>2005</p>
+            <div class="h5">Certificate</div>
+          </div>
+        </div>
+        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body">
+            <div class="h5">Certificate business management</div>
+            <p class="category">Swindon College</p>
+            <p>This course covered the major aspects of first line management including hiring, performance management and basic budgeting, it was the first management course I had taken and was a good overview of being a front line manager.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+	
+	    <div class="card">
+      <div class="row">
+        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body cc-education-header">
+            <p>2000-2004</p>
+            <div class="h5">Bachelor's Degree</div>
+          </div>
+        </div>
+        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body">
+            <div class="h5">BSc(Hons) Computer Science</div>
+            <p class="category">University of the West of England</p>
+            <p>                            <b>Analytical modelling</b><br>
+                            score: 48<br><br>
+                            
+                            Description: This module covered the discrete mathematics required for the understanding of computer science concepts and to be able to model theoretical constructs.<br><br>
+                            
+                            <b>Component based development</b><br>
+                            score: 52<br><br>
+                            
+                            Description: This module covered Java EE, java beans and built on previous knowledge of object based programming to culminate in building a e-commerce book site with the ability for people to leave reviews (including a star rating), buy books and register their details to make checkout easier and faster in future.
+                        <br><br>
+                        <b>Computer networks and operating systems</b><br>
+                        score: 62<br><br>
+                        
+                        Description: This module covered the basics of operating systems and networks, the module had me building the various utilities within an operating system (ls, cd, pwd) and ultimately combining these into a custom shell on the OS, This module also covered the OSI model, IP addressing and routing.
+                        <br><br>
+                        <b>Computer science concepts</b><br>
+                        score: 77<br><br>
+                        
+                        Description: This module covered the basic concepts for computer science including Big O notation, P vs NP problems, binary arithmetic and basic cryptography
+                    <br><br>
+                        <b>Computer systems</b><br>
+                        score: 58<br><br>
+                        
+                        Description: This module covered the very basics of computing and the project for this module involved writing a serial port to serial port communication protocol with encryption using x86 assembler.
+                        <br><br>
+                        <b>Computing project</b><br>
+                        score: 75<br><br>
+                        
+                        Description: This was a research based (rather than developing an application) piece of work where I looked at the creation, development and evolution of web crawlers, how they are used by companies to index the Internet and the ultimately built two different crawlers using different indexing methods to determine which would index the Internet the fastest given an arbitrary start point.
+                        <br><br>
+                        <b>Data structures and databases</b><br>
+                        score: 54<br><br>
+                        
+                        Description: This module was an introduction to Oracle databases and using it to store information in a efficient way, it examined all aspects of database design to minimize memory and disk usage while still being easily expandable and adaptable.
+                        <br><br>
+                        <b>Declarative programming</b><br>
+                        score: 58<br><br>
+                        
+                        Description: This was an introduction to declarative programming using PROLOG and helped to understand the differences and benefits of declarative programming.
+                        <br><br>
+                        <b>Design and analysis of algorithms</b><br>
+                        score: 57<br><br>
+                        
+                        Description: This module looked at writing various sorting algorithms in Java (bubble sort, binary sort, quick sort) as well as different storing mechanisms such as binary tree's.
+                        <br><br>
+                        <b>Formal language processing</b><br>
+                        score:  76<br><br>
+                        
+                        Description: This module looked at creating intelligent systems using Haskell and LISP, this combined together until ultimately I created a London Underground mapping system to find the quickest route from any two arbitrary points within the network.
+                        <br>
+                        <b>Industrial placement</b><br>
+                        score:  Pass<br><br>
+                        
+                        Description: I spent a year working for the NHS in WIltshire and applied some of the topics I had learnt over the past two years in a real world environment.
+                        <br><br>
+                        <b>Information systems application context</b><br>
+                        score: 65<br><br>
+                        
+                        Description: This module Focused on the business aspects of technology and involved case studies using private industry and the public sector to discuss what went well, what didn't and why.
+                        <br><br>
+                        <b>Interface engineering</b><br>
+                        score: 58<br><br>
+                        
+                        Description: This module was an introduction to user interface design and showed the different ways information can be conveyed to the end user and when different methods should be used.
+                        <br><br>
+                        <b>Professional, commercial & legal issues</b><br>
+                        score: 58<br><br>
+                        
+                        Description: This module covered the legal and ethical issues facing computing and required that they were discussed and reasoning given for our viewpoints, the project for this module was a presentation for an ethical business to a group of lecturers acting as angel investors.
+                        <br><br>
+                        <b>Program development</b><br>
+                        score: 64<br><br>
+                        
+                        Description: This was an introduction to Java programming and Focused on understanding the language and being able to solve problems in an object orientated model.
+                        <br><br>
+                        <b>Software design</b><br>
+                        score: 56<br><br>
+                        
+                        Description: This module focused on how to design software using UML including the backend systems and the user interface.
+                        <br><br>
+                        <b>Software engineering</b><br>
+                        score: 48<br><br>
+                        
+                        Description: This module improved upon the first year Java programming module and introduced advanced topics which culminated in writing a vending machine using object orientated principals.
+                        <br><br>
+                        <b>Symbolic processing</b><br>
+                        score: 67<br><br>
+                        
+                        Description: This was an artificial intelligence module and covered the history of artificial intelligence, it's future and how AI's are built by providing the symbols that they need to process in order to understand the world.
+                        <br><br>
+                        <b>Systems development</b><br>
+                        score: 69<br><br>
+                        
+                        Description: This module was Focused on web technologies and involved writing a fully functioning website for a company using HTML, perl and the UNIX rdb database.
+                        <br></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section" id="articles">
+  <div class="cc-contact-information">
+    <div class="container">
+      <div class="cc-contact">
+        <div class="row">
+          <div class="col-md-9">
+            <div class="card mb-0" data-aos="zoom-in">
+              <div class="h4 text-center title">Articles</div>
+              <div class="row">
+                  <div class="card-body">
+                    <a href="/public/articles/was_the_ou_mba_worth_it.pdf" target="_blank">Was the OU MBA worth it?</a><br>
+                    <a href="/public/articles/google_intro_to_digital_marketing.pdf" target="_blank">A review of Google's introduction to digital marketing course</a><br>
+                    <a href="/public/articles/what_is_strategy.pdf" target="_blank">What is Strategy? an introduction</a><br>
+                    <a href="/public/articles/pets_or_cattle.pdf" target="_blank">Pets vs Cattle concept for virtual machines</a><br>
+                    <a href="/public/articles/expectancy_theory.pdf" target="_blank">Expectancy Theory</a><br>
+                    <a href="/public/spreadsheets/fargate.xlsx" target="_blank">Fargate vs EC2 comparison</a><br>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="section" id="PersonalAssessments">
+  <div class="cc-contact-information">
+    <div class="container">
+      <div class="cc-contact">
+        <div class="row">
+          <div class="col-md-9">
+            <div class="card mb-0" data-aos="zoom-in">
+              <div class="h4 text-center title">Personality Assessments</div>
+              <div class="row">
+                  <div class="card-body">
+                    <a href="/public/pdf/Hogan_business_reasoning.pdf" target="_blank">Hogan Business Reasoning Assessment (Personal)</a><br>
+                    <a href="/public/pdf/Hogan_personality_inventory.pdf" target="_blank">Hogan Personality Inventory Assessment (Personal)</a><br>
+                    <a href="/public/pdf/discovery_insights.pdf" target="_blank">Discovery Insights Personal Profile Assessment (Personal)</a><br><br> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--
+<div class="section" id="contact">
+  <div class="cc-contact-information">
+    <div class="container">
+      <div class="cc-contact">
+        <div class="row">
+          <div class="col-md-9">
+            <div class="card mb-0" data-aos="zoom-in">
+              <div class="h4 text-center title">Contact Me</div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="card-body">
+
+             
+                  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+-->
+<script>
+  function setName(){
+    if(getUrlParameter("name").length > 0){
+    document.getElementById("welcomename").innerHTML= getUrlParameter("name") ;
+  }
+}
+
+  function getUrlParameter(name) {
+name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+var results = regex.exec(location.search);
+return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+};
+</script>             
+    <footer class="footer">
+      <div class="h4 title text-center">Lee Payne - CV</div>
+    </footer>
+
+
+    <!-- Modal -->
+<div class="modal fade" id="myLinks" tabindex="-1" role="dialog" aria-labelledby="myLinksLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="myLinksLabel">My Other Sites</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <a href="https://cpd.thepaynetrain.com">CPD (Continuing Professional Development) record site</a><br>
+        <a href="https://vr.thepaynetrain.com">My CV in VR (headset optional)</a><br>
+        <a href="https://dev.azure.com/lapayne/_git/scripts">Git script site</a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  fetch(window.location.origin + "/quotes")
+  .then(response => response.body)
+.then(rb => {
+  const reader = rb.getReader();
+
+  return new ReadableStream({
+    start(controller) {
+      // The following function handles each data chunk
+      function push() {
+        // "done" is a Boolean and value a "Uint8Array"
+        reader.read().then( ({done, value}) => {
+          // If there is no more data to read
+          if (done) {
+            console.log('done', done);
+            controller.close();
+            return;
+          }
+          // Get the data and send it to the browser via the controller
+          controller.enqueue(value);
+          // Check chunks by logging to the console
+          console.log(done, value);
+          push();
+        })
+      }
+
+      push();
+    }
+  });
+})
+.then(stream => {
+  // Respond with our stream
+  return new Response(stream, { headers: { "Content-Type": "text/text" } }).text();
+})
+.then(result => {
+  // Do things with result
+  const quotearray = result.split(";;")
+
+  document.getElementById("quote").innerHTML = " <div class='h4 mt-0 title'>Quote of the day:</div><br>" + quotearray[Math.floor(Math.random() * quotearray.length-2)];
+});
+</script>
+
+  </body>
+</html>

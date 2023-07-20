@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>File Upload</title>
+</head>
+<body>
+  <h2>Upload a File</h2>
+  <input type="file" id="fileInput">
+  <br><br>
+  <button onclick="uploadFile()">Upload</button>
+
+  <script>
+    function uploadFile() {
+      const fileInput = document.getElementById('fileInput');
+      const file = fileInput.files[0];
+      
+      const formData = new FormData();
+      formData.append('file', file);
+
+      fetch('/api/ImageDescribe', {
+        method: 'POST',
+        body: formData
+      })
+      .then(response => response.text())
+      .then(result => {
+        console.log(result);
+        // Handle the response from the Azure Function
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        // Handle any errors that occurred during the upload
+      });
+    }
+  </script>
+</body>
+</html>
