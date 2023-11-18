@@ -6,3 +6,10 @@ on:
     branches: [ "main" ]
 
   workflow_dispatch:
+
+jobs:
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - run: docker build --platform linux/arm64 -t testbuild -f homepage.Dockerfile .
+      
